@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/logo-b-w.svg">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <!-- DIVIDING THE PAGE IN 2 PARTS - NAV AND PAGE CONTENT -->
+    <div class="grid-container">
+
+        <!-- NAV - FIXED ON THE RIGHT -->
+        <div class="fixed-container">
+            <nav class="fixed">
+                <ul>
+                    <div>
+                        <!-- PROJECTS LINK -->
+                        <li>
+                            <a href="#section1">
+                                <span class="rect"></span>
+                                <span class="circle"></span>
+                                Projects
+                            </a>
+                        </li>
+
+                        <!-- ABOUT LINK -->
+                        <li>
+                            <a href="#section2">
+                                <span class="rect"></span>
+                                <span class="circle"></span>
+                                About
+                            </a>
+                        </li>
+
+                        <!-- TOOLS LINK -->
+                        <li>
+                            <a href="#section3">
+                                <span class="rect"></span>
+                                <span class="circle"></span>
+                                Tools
+                            </a>
+                        </li>
+
+                        <!-- CONTACT LINK -->
+                        <li>
+                            <a href="#section4">
+                                <span class="rect"></span>
+                                <span class="circle"></span>
+                                Contact
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="flex-center logo">
+                        <img id="logo" src="assets/logo-b-w.svg">
+                        <span class="arrow-up">&#8593;</span>
+                    </div>
+                    
+                </ul>
+           
+            </nav>
+        </div>
+
+        <!-- PAGE CONTENT - ON THE RIGHT-->
+        <div class="rightCont">
+
+            <!-- HEADER -->
+            <header id="header">
+
+                <!-- SMALL PARTICLES-->
+                <img class="dots1" src="assets/Asset 3.svg">
+
+                <!-- JS GENERATING TEXT -->
+                <div class="home">
+                    <div class="text">
+                        <h1 data-target-resolver></h1>
+                        <h3 data-target-resolver></h3>
+                    </div>
+
+                    <div>
+
+                        <!-- BIG PARTICLES (MOVING WITH THE MOUSE)-->
+                        <img src="assets/Asset 5.svg" class="dots2" id="dots2">
+
+                        <!-- FRAME DIV -->
+                        <div class="frameCont">
+
+                            <!-- FRAME -->
+                            <img src="img/frame.png" id="frame">
+
+                            <!-- BORDER BEHIND FRAME -->
+                            <img src="assets/border2.svg" id="back-border">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ARROW POINTING DOWN -->
+            <img src="assets/arrow3.svg" id="arrow">
+
+            <!-- TITLE OVER THE LINE-->
+            <h4 class="section-title">projects</h4>
+
+            <!-- MAIN CONTENT SECTION -->
+            <main>
+
+                <!-- PROJECTS SECTION -->
+                <section class="projects content-section" id="section1">
+
+                    <!-- HORIZONTAL COLORFUL LINE - DIVIDE SECTIONS-->
+                    <img src="assets/line2.svg" id="line">
+
+                    <!-- CARBYON MAP PROJECT -->
+                    <div class="project flex-center margin-top">
+                        <div class="description">
+
+                            <!-- PROJECT TITLE -->
+                            <h3>CARBYON MAP PROJECT</h3>
+
+                            <div class="description-details">
+
+                                <!-- VERTICAL LINE -->
+                                <div class="lineCont">
+                                    <div class="vertical"></div>
+                                </div>
+
+                                <!-- PROJECT DETAILS -->
+                                <div class="textCont">
+
+                                    <!-- PROJECT SUBTITLE -->
+                                    <h4>Interactive colormap application</h4>
+                                    <p>Business tool that helped improve the company's workflow, 
+                                        displaying key information about machine placements all around the world.</p>
+
+                                    <!-- LINK TO GITHUB -->
+                                    <span>&#10509;&nbsp;</span><a class="link fontSize"
+                                        href="https://github.com/MKuneva/Portfolio/tree/main/CarbyonApp">Go
+                                        to Git Repository</a>
+
+                                    <p>Developed using:</p>
+                                    <p>Python, Panel, Folium, Geopandas</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PROJECT IMAGE (GIF) -->
+                        <div class="picture">
+                            <img class="cover" src="img/final1.gif">
+                        </div>
+                    </div>
+
+                    <!-- MEMORY GAME PROJECT -->
+                    <div class="project flex-center margin-top">
+                        <div class="description">
+
+                            <!-- PROJECT TITLE -->
+                            <h3>MEMORY GAME</h3>
+
+                            <div class="description-details">
+
+                                <!-- VERTICAL LINE -->
+                                <div class="lineCont">
+                                    <div class="vertical"></div>
+                                </div>
+
+                                <!-- PROJECT DETAILS -->
+                                <div class="textCont">
+
+                                    <!-- PROJECT SUBTITLE -->
+                                    <h4>Interactive flipping cards memory game</h4>
+                                    <p>This engaging game challenges players to test their memory skills by uncovering
+                                        matching pairs of cards within a specified time frame.</p>
+
+                                        <!-- LINK TO GITHUB -->
+                                    <span>&#10509;&nbsp;</span><a class="link fontSize"
+                                        href="https://github.com/MKuneva/Portfolio/tree/main/memory%20game">Go
+                                        to Git Repository</a>
+
+                                    <p>Developed using:</p>
+                                    <p>HTML5, CSS3, JavaScript</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PROJECT IMAGE (GIF) -->
+                        <div class="picture">
+                            <img class="cover" src="img/final1.gif">
+                        </div>
+                    </div>
+
+                    <!-- AVALINE RECREATION PROJECT -->
+                    <div class="project flex-center">
+                        <div class="description">
+
+                            <!-- PROJECT TITLE -->
+                            <h3>AVALINE</h3>
+                            <div class="description-details">
+
+                                <!-- VERTICAL LINE -->
+                                <div class="lineCont">
+                                    <div class="vertical"></div>
+                                </div>
+
+                                <!-- PROJECT DETAILS -->
+                                <div class="textCont">
+                                    
+                                    <!-- PROJECT SUBTITLE -->
+                                    <h4>Website recreation</h4>
+                                    <p>Recreation of <a class="link"
+                                            href="https://drinkavaline.com/">drinkavaline.com</a> design of the
+                                        landing page</p>
+
+                                    <!-- LINK TO GITHUB -->
+                                    <span>&#10509;&nbsp;</span><a class="link fontSize"
+                                        href="https://github.com/MKuneva/Portfolio/tree/main/wine">Go
+                                        to Git Repository</a>
+
+                                    <p>Developed using:</p>
+                                    <p>HTML5, CSS3, JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT IMAGE (GIF) -->
+                        <div class="picture">
+                            <img class="cover" src="img/wine.gif">
+                        </div>
+                    </div>
+
+                    <!-- BLENDER PROJECT -->
+                    <div class="project flex-center">
+                        <div class="description">
+
+                            <!-- PROJECT TITLE -->
+                            <h3>3D modeling</h3>
+                            <div class="description-details">
+
+                                <!-- VERTICAL LINE -->
+                                <div class="lineCont">
+                                    <div class="vertical"></div>
+                                </div>
+
+                                <!-- PROJECT DETAILS -->
+                                <div class="textCont">
+
+                                    <!-- PROJECT SUBTITLE -->
+                                    <h4>Apartment building with café</h4>
+
+                                    <!-- LINK TO GITHUB -->
+                                    <span>&#10509;&nbsp;</span><a class="link fontSize"
+                                        href="https://github.com/MKuneva/Portfolio/wiki/3D-modeling">Check it
+                                        out</a>
+
+                                    <p>Developed using:</p>
+                                    <p>Blender</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PROJECT IMAGE -->
+                        <div class="picture">
+                            <img class="cover" src="img/blender.png">
+                        </div>
+                    </div>
+
+                    <!-- ANIMATION PROJECT -->
+                    <div class="project flex-center">
+                        <div class="description">
+
+                            <!-- PROJECT TITLE -->
+                            <h3>Animation</h3>
+                            <div class="description-details">
+
+                                <!-- VERTICAL LINE -->
+                                <div class="lineCont">
+                                    <div class="vertical"></div>
+                                </div>
+
+                                <!-- PROJECT DETAILS -->
+                                <div class="textCont">
+
+                                    <!-- PROJECT SUBTITLE -->
+                                    <h4>Digital prom invitation</h4>
+                                    <p>Developed using:</p>
+                                    <p>After Effects, Adobe Photoshop</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT IMAGE (GIF) -->
+                        <div class="picture">
+                            <img class="cover" src="img/invite.gif">
+                        </div>
+                    </div>
+
+                    <!-- APP DEV PROJECT -->
+                    <div class="project flex-center">
+                        <div class="description">
+
+                            <!-- PROJECT TITLE -->
+                            <h3>App developing</h3>
+                            <div class="description-details">
+
+                                <!-- VERTICAL LINE -->
+                                <div class="lineCont">
+                                    <div class="vertical"></div>
+                                </div>
+
+                                <!-- PROJECT DETAILS -->
+                                <div class="textCont">
+
+                                    <!-- PROJECT SUBTITLE -->
+                                    <h4>StudySync</h4>
+                                    <p>
+                                        A social media platform designed to connect college and university students,
+                                        allowing them to ask questions, share answers, and collaborate on academic
+                                        topics. Users are able to upload and share files and folders, message eachother
+                                        and add students with the same study directions.</p>
+
+                                    <!-- LINK TO GITHUB -->
+                                    <span>&#10509;&nbsp;</span><a class="link fontSize"
+                                        href="https://github.com/MKuneva/Portfolio/tree/main/StudySync">Go
+                                        to Git Repository</a>
+                                    <p>Developed using:</p>
+                                    <p>HTML5, CSS3, JavaScript, NodeJS</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT IMAGE (GIF) -->
+                        <div class="picture">
+                            <img class="cover" src="img/studysync.gif">
+                        </div>
+                    </div>
+
+                    <!-- HORIZONTAL COLORFUL LINE - DIVIDE SECTIONS-->
+                    <img src="assets/line2.svg" id="line" class="line2">
+
+                </section>
+
+                <!-- ABOUT SECTION (GRID)-->
+                <section class="about content-section grid" id="section2">
+
+                    <!-- ABOUT ME -->
+                    <div class="left-section">
+
+                        <!-- SECTION TITLE -->
+                        <h2 class="rubik-scribble-regular section-title-left">ABOUT&nbsp; ME</h2>
+
+                        <!-- about me info -->
+                        <p>I am Maria Kuneva, 20 years old, Bulgarian and I am 4th semester student at Fontys
+                            university, currently specialising in Cyber Security. I am hardworking and passionate and
+                            enjoy spending time on little details. Adding personal touch to my work is my signature. In
+                            high school I was studying C# and SQL, also I did 3 semesters Media design and I can say
+                            that I have logical and design thinking. I enjoy coding and I spend a lot of time improving
+                            my programming skills.</p>
+                    </div>
+
+                    <!-- SKILLS -->
+                    <div class="right-section">
+
+                        <!-- SECTION TITLE -->
+                        <h2 class="rubik-scribble-regular section-title-right">SKILLS</h2>
+
+                        <!-- my skills -->
+                        <div class="skills">
+
+                            <!-- UX DESIGN-->
+                            <div class="skill">
+                                <img src="img/analytics.png">
+                                <h4>User Experience Design</h4>
+                                <p>Gather insights, analyze user behaviors, and identify pinpoint areas for improvement
+                                    to guide the creation of intuitive and user-centered digital experiences.</p>
+                            </div>
+
+                            <!-- ANIMATIONS -->
+                            <div class="skill">
+                                <img src="img/animated.png">
+                                <h4>Animated Interactions</h4>
+                                <p>I design animations to enhance engagement and make experiences more dynamic and
+                                    enjoyable.</p>
+                            </div>
+
+                            <!-- PROTOTYPING -->
+                            <div class="skill">
+                                <img src="img/prototype.png">
+                                <h4>Wireframing & protoyping</h4>
+                                <p>I create different types of prototype designs to test with users and help in making
+                                    better decisions.</p>
+                            </div>
+
+                            <!-- UI DESIGN-->
+                            <div class="skill">
+                                <img src="img/ui.png">
+                                <h4>User Interface Design</h4>
+                                <p>I create user-friendly interfaces for digital platforms, ensuring they maintain a
+                                    consistent visual style, usability, and alignment with core values.</p>
+                            </div>
+                            
+                            <!-- PROFRAMMING -->
+                            <div class="skill">
+                                <img src="img/code.png">
+                                <h4>Programming</h4>
+                                <p>HTML5, CSS3, JavaScript, NodeJS, C#, SQL, React, TypeScript</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TOOLS I USE SECTION -->
+                <section class="tools content-section" id="section3">
+
+                    <!-- HORIZONTAL COLORFUL LINE - DIVIDE SECTIONS -->
+                    <img src="assets/line2.svg" id="line">
+
+                    <!-- SECTION TITLE -->
+                    <h2 class="rubik-scribble-regular section-title-tools">TOOLS&nbsp; I&nbsp; USE</h2>
+
+                    <!-- Tools -->
+                    <div class="cards">
+
+                        <!-- FIGMA -->
+                        <div class="card border-gradient">
+                            <div>
+                                <img class="small" src="img/figma_logo.svg">
+                                <h4>Figma</h4>
+                            </div>
+                            <p>For creating my prototypes and colaborating with people on a design. </p>
+                        </div>
+
+                        <!-- PHOTOSHOP -->
+                        <div class="card border-gradient">
+                            <div>
+                                <img class="small" src="img/ps.svg">
+                                <h4>Photoshop</h4>
+                            </div>
+                            <p>For editting images and creating posters, stickers and other media. </p>
+                        </div>
+
+                        <!-- ILLUSTRATOR -->
+                        <div class="card border-gradient ">
+                            <div>
+                                <img class="small" src="img/ai.svg">
+                                <h4>Abobe AI</h4>
+                            </div>
+                            <p>For creating vector elements and illustrations. </p>
+                        </div>
+
+                        <!-- PREMIERE PRO -->
+                        <div class="card border-gradient ">
+                            <div>
+                                <img class="small" src="img/pr.svg">
+                                <h4>Premiere Pro</h4>
+                            </div>
+                            <p>For editing videos and creating short movies. </p>
+                        </div>
+
+                        <!-- INDESIGN -->
+                        <div class="card border-gradient ">
+                            <div>
+                                <img class="small" src="img/id.svg">
+                                <h4>Adobe ID</h4>
+                            </div>
+                            <p>For creating magazine and cover designs. </p>
+                        </div>
+
+                        <!-- BLENDER -->
+                        <div class="card border-gradient ">
+                            <div>
+                                <img class="small" src="img/blender.svg">
+                                <h4>Blender</h4>
+                            </div>
+                            <p>For 3D modeling. </p>
+                        </div>
+
+                        <!-- GIT -->
+                        <div class="card border-gradient ">
+                            <div>
+                                <img class="small" src="img/Git.svg">
+                                <h4>git</h4>
+                            </div>
+                            <p>For colaborating on group projects and storing code. </p>
+                        </div>
+                        
+                    </div>
+
+                    <!-- HORIZONTAL COLORFUL LINE - DIVIDE SECTIONS -->
+                    <img src="assets/line2.svg" id="line">
+
+                </section>
+
+                <!-- CONTACT SECTION -->
+                <section class="contact content-section section-title-left" id="section4">
+
+                    <!-- SECTION TITLE -->
+                    <h2 >REACH&nbsp; OUT&nbsp; TO&nbsp; ME&nbsp; !</h2>
+
+                    <!-- BUTTONS FOR SOCIAL MEDIA -->
+                    <div class="contact-buttons">
+                        <a class="button" href="https://www.linkedin.com/in/maria-kuneva/">LinkedIn</a>
+                        <a class="button" href="https://www.instagram.com/mariya_kuneva/">Instagram</a>
+                        <a class="button" href="mailto:maria.kuneva@student.fontys.nl">Email me</a>
+                    </div>
+        
+                </section>
+            </main>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <!-- CREDITS SECTION -->
+            <div class="credits">
+                <p>Credits:</p>
+                <a
+                    href="https://www.freepik.com/free-psd/isolated-realistic-laptop_28427060.htm#query=macbook%20png&position=4&from_view=keyword&track=ais&uuid=80a3aac2-8412-4110-b479-2188c693c7e0">Image
+                    by Vectonauta on Freepik</a>
+                <a href="https://www.flaticon.com/free-icons/animation" title="animation icons">Animation icons created
+                    by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/analysis" title="analysis icons">Analysis icons created by
+                    Uniconlabs - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/prototype" title="prototype icons">Prototype icons
+                    created by kerismaker - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/blog" title="blog icons">Blog icons created by Freepik
+                    -Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by
+                    Icongeek26 - Flaticon</a>
+                <div> Icons made by <a href="https://www.flaticon.com/authors/uniconlabs" title="Uniconlabs">
+                        Uniconlabs
+                    </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+                <!--Copyright (c) 2024 by bridget manners (https://codepen.io/bridgetknows/pen/jKZNKR) 
+            Fork of an original work Futuristic Resolving/Typing Text Effect feat. GLaDOS (https://codepen.io/3TH3R3AL/pen/mKOBYx
+            Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+            The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
+
+                <!--Copyright (c) 2024 by pranav kad (https://codepen.io/pranavkadpatil15/pen/MWrjEgV)
+            Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+            The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
+
+                <a
+                    href="https://www.freepik.com/free-psd/smartphone-mock-up-isolated_4075457.htm#from_view=detail_alsolike">Image
+                    by zlatko_plamenov on Freepik</a>
+                <a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik -
+                    Flaticon</a>
+            </div>
+           
+                <p class="copyright"> Maria Kuneva © 2024</p>
+
+        </footer>
+
+    
+    <!-- SCRIPTS -->
+    <script src="js.js"></script>
+    <script src="shuffle.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    </div>
+</body>
+
+</html>

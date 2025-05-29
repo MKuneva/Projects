@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Handlee&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Londrina+Outline&family=Rubik+Scribble&display=swap');
+
+html                         {height: 100%;}
+body                         {margin: 0; background-color: #0a111f; scroll-behavior: smooth;
+                              height: fit-content; width: 100%;}
+header                       {height: 100vh;}
+h1, h2, h3, h4, p            {color: white;}
+h1                           {font-size: 5em; font-family: "Rubik Scribble", system-ui;}
+h2                           {font-size: 3.5em; font-family: "Rubik Scribble", system-ui;}
+h3                           {font-size: 2.5em; font-family: "Amatic SC", sans-serif;}
+h4                           {font-size: 1.5em; font-family: "Comic Neue", cursive;}
+p                            {font-family: "Comic Neue", cursive; font-weight: 300; font-size: 1.2em;}
+a                            {display: inline-block;color: white;text-decoration: none;
+                              font-family: "Comic Neue", cursive;}
+span                         {color: white; font-size: 2em; display: inline-block; position: relative;}
+
+.fontSize                    {font-size: 1.2em;}
+.bold                        {font-weight: 600;}
+.flex-center                 {display: flex;align-items: center;text-align: center;}
+.margin-top                  {margin-top: 5%;}
+
+/* the horizontal colorful line separating the sections*/
+#line                        {position: relative;}
+.line2                       {margin-top: 5%;}
+
+/* THE GRID THAT DIVIDES THE WEBSITE ON NAV ON THE LEFT AND CONTENT SECTION ON THE RIGHT */
+.grid-container              {display: grid; grid-template-columns: 13% 86%; grid-gap: 1%;}
+
+#logo                        {width: 25%;align-self: center;margin-right: 10%; }
+.logo                        {height: 10%;justify-content: center;margin-right: 10%;}
+.arrow-up                    {animation: jump 1.5s infinite;}
+#logo:hover,
+.arrow-up:hover              {cursor: pointer;}
+
+
+
+/* Arrow animation jumping up and down */
+@keyframes jump {
+     0%                      {margin-bottom: 0;}
+    50%                      {margin-bottom: 20px;}
+    100%                     {margin-bottom: 0;}
+  }
+ 
+/*
+   -------------
+  | NAV STYLING |
+   -------------
+*/
+
+nav                          {height: 100%;background-color: #0a111f;}
+nav a                        {font-size: 1.5em;}
+
+.fixed                       {position: fixed; top: 0; left: 0; z-index: 1; width: 13%; 
+                              font-family: "Amatic SC", sans-serif;}
+
+ul                           {list-style: none; padding: 0;display:flex; flex-direction: column;
+                              justify-content: space-between;height: 95%;}
+li                           {padding: 10px 0;}
+
+.circle                      {height: 10px; width: 10px; left: -10px; border-radius: 50%;
+                              background-color: white;}
+.rect                        {height: 3px; width: 0px; left: 0; bottom: 4px; background-color: #272727; 
+                              -webkit-transition: -webkit-transform 0.6s, width 1s;
+                              -moz-transition: -webkit-transform 0.6s, width 1s;
+                              transition: transform 0.6s, width 1s;}
+.link:hover, 
+nav .active-section          {background: linear-gradient(to right, rgba(182, 78, 249, 255), 
+                              rgba(108, 101, 255, 255), rgba(116, 148, 255, 255), rgba(134, 251, 219, 255),
+                              rgba(244, 246, 132, 255)); -webkit-text-fill-color: transparent;
+                              -webkit-background-clip: text;}
+nav a:hover span,
+nav .active-section span     {background: linear-gradient(to right, rgba(182, 78, 249, 255), 
+                              rgba(108, 101, 255, 255), rgba(116, 148, 255, 255), rgba(134, 251, 219, 255),
+                              rgba(244, 246, 132, 255)); -webkit-text-fill-color: transparent;}
+nav .active-section .rect    {width: 20px;}
+
+
+
+
+/* Apply styling and gradient animation to <a> elements */
+.link                        {display: inline-block; color: white; text-decoration: none;
+                              font-family: "Comic Neue", cursive;
+                              background: linear-gradient(to right, rgba(182, 78, 249, 255),
+                              rgba(108, 101, 255, 255), rgba(116, 148, 255, 255), 
+                              rgba(134, 251, 219, 255), rgba(244, 246, 132, 255)); background-size: 200% 100%;
+                              background-position: 100% 50%; transition: 0.4s;
+                              -webkit-text-fill-color: transparent; -webkit-background-clip: text; 
+                              animation: changeGradient 2s infinite;}
+                              
+/* Keyframes for gradient animation on links */
+@keyframes changeGradient {
+  0%                         {background-position: 0% 50%;}
+  50%                        {background-position: 100% 50%;}
+  100%                       {background-position: 0% 50%;}
+}
+
+/*   ----------------
+    | HEADER STYLING |
+     ----------------
+*/
+
+/* background SVG vectors */
+.dots1                       {z-index: -1; position: fixed;}
+.dots2                       {position: relative; z-index: -1; width: 96%;}
+
+/* frame */
+img#frame                    {z-index: 1; position: absolute; width: 50%; top: 50%; left: 50%;
+                              transform: translate(-45%, -50%);}
+
+/* generating text */
+.text                        {position: absolute; top: 50%; left: 50%; transform: translate(-45%, -50%);
+                              z-index: 3; text-align: center;}
+
+.text h1                     {background: linear-gradient(to bottom left, rgba(182, 78, 249, 255), 
+                              rgba(108, 101, 255, 255), rgba(116, 148, 255, 255), rgba(134, 251, 219, 255),
+                              rgba(244, 246, 132, 255), rgba(182, 78, 249, 255), rgba(108, 101, 255, 255), 
+                              rgba(116, 148, 255, 255), rgba(244, 246, 132, 255)); 
+                              -webkit-text-fill-color: transparent; -webkit-background-clip: text;}
+
+/* border behind the frame */
+#back-border                 {position: absolute; width: 47%; top: 50%; left: 50%; 
+                              transform: translate(-39%, -44%);}
+
+/* arrow pointing down */
+#arrow                       {position: absolute; width: 2%; top: 50%; left: 50%;
+                              transform: translate(100%, 80%);}
+
+/* "projects" title on the arrow */
+h4.section-title             {text-align: center; position: absolute; width: 10%; margin: 0;
+                              transform: translate(-20%, 60%); left: 50%; top: 90%; 
+                              background-color: #0a111f;}
+
+
+
+/*   -------------------------
+    | PROJECT SECTION STYLING |
+     -------------------------
+*/
+.projects                    {background-color: #0a111f; margin-top: 10%; display: flex;
+                              flex-direction: column; margin-top: 5%; padding: 2em 0;}
+
+/* Initially hide projects + animation ease-out when not in viewport */
+.projects .project           {opacity: 0;transform: translateY(20px);
+                              transition: opacity 1s ease-out, transform 1s ease-out;}
+
+/* Make projects visible when in viewport */
+.projects .project.visible   {opacity: 1; transform: translateY(0);}
+
+/* project image */
+.cover                       {width: 100%;}
+
+/* project description */
+.description                 {width: 60%;text-align: left;display: flex;flex-direction: column;}
+.description h3              {margin-top: 0;text-align: left;}
+
+/* project details below the title of the project */
+.description-details         {display: flex;}
+
+/* project image outer div */
+.picture                     {width: 60%;}
+
+/* the vertical line in the project details */
+.vertical                    {width: 1px; height: 100%; background-color: white; opacity: .6;}
+
+/* the line's outer div */
+.lineCont                    {width: 10%; display: flex;justify-content: center; align-items: center;}
+
+/* project details outer div */
+.textCont                    {width: 90%;text-align: left;}
+.textCont h4                 {margin-top: 0;}
+
+/* bolds the last <p> element of the details */
+.textCont>p:last-child       {font-weight: bold;}
+
+
+/*   -----------------------
+    | ABOUT SECTION STYLING |
+     -----------------------
+*/
+
+/* About section grid */
+.grid                        {display: grid; grid-template-columns: 30% 60%; gap: 6%;}
+
+/* ABOUT ME */
+.left-section                {text-align: left;}
+
+/* SKILLS */
+.right-section               {text-align: center;}
+.skills                      {display: flex;justify-content: space-around;flex-wrap: wrap;}
+.skill                       {width: 30%;text-align: center;}
+.skill img                   {width: 40%;}
+.skill h4                    {margin: 0.5em 0 0 0;}
+
+
+/*   -----------------------
+    | TOOLS SECTION STYLING |
+     -----------------------
+*/
+
+section.tools                  {background-color: #0a111f}
+
+/* tools outer div */
+.cards                         {display: flex; flex-wrap: wrap; justify-content: space-between;width: 90%;
+                                margin-left: 8%;}
+
+.border-gradient               {border: 2px solid transparent;
+                                /* Set initial border to transparent */
+                                border-image-slice: 0 0 0 0;}
+
+/* apply gradient border on mouseover */
+.border-gradient-purple        {transition: 1s;border-image-source: linear-gradient(to bottom left,
+                                rgba(182, 78, 249, 255), rgba(108, 101, 255, 255), rgba(116, 148, 255, 255),
+                                rgba(134, 251, 219, 255), rgba(244, 246, 132, 255), rgba(182, 78, 249, 255), 
+                                rgba(108, 101, 255, 255), rgba(116, 148, 255, 255), rgba(244, 246, 132, 255));
+                                border-image-slice: 1;}
+/* tool outer div */
+.card                          {display: flex; flex-direction: column; width: 28%; margin-bottom: 2%; 
+                                padding: 2%;}
+
+.card>div                      {display: flex;}
+
+/* makes the icon of the tools smaller */
+.small                         {width: 20%; height: auto;}
+
+/* tool's icon */
+.card img                      {margin-right: 5%;}
+
+
+/*   -------------------------
+    | CONTACT SECTION STYLING |
+     -------------------------
+*/
+
+.contact>div                   {align-items: flex-start;}
+.button                        {border: 1px solid white; border-radius: 2rem; padding: 1% 1%; 
+                                font-size: large; margin-right: 2%; width: 15%; text-align: center;}
+.button:hover                  {background-color: #1a1a1a; box-shadow: 0px 0px 0px 1px white inset;
+                                transition: box-shadow 0.1s ease-in}
+.contact-buttons               {display: flex;}
+.credits a,
+.credits p,
+.credits div                   {margin: 0; color: rgba(128, 128, 128, 0.180); line-height: 0.8;
+                                display: inline;}
+
+/*   ----------------
+    | FOOTER STYLING |
+     ----------------
+*/                                
+footer                         {color: rgba(128, 128, 128, 0.180);padding: 4% 4% 4% 0;}
+.copyright                     {text-align: right;}
+
+
+
+/* EASE-IN EASE-OUT ANIMATIONS */
+
+/* Initially hide the all section titles */
+
+/* EASE-IN from right to left*/ 
+.section-title-left,
+.section-title-tools,
+.left-section,
+.contact-section-title        {opacity: 0; transform: translateX(-20px); 
+                               transition: opacity 1s ease-out, transform 1s ease-out;}
+
+/* EASE-IN from left to right*/                              
+.section-title-right,
+.cards,
+.skills .skill                {opacity: 0; transform: translateX(20px); 
+                               transition: opacity 1s ease-out, transform 1s ease-out;}
+
+/* Make everuthing visible and animate them into view */
+.section-title-left.visible,
+.section-title-tools.visible,
+.section-title-right.visible,
+.skills .skill.visible,
+.left-section.visible,
+.right-section.visible,
+.cards.visible,
+.contact-section-title         {opacity: 1; transform: translateX(0);}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 987px) {
+  nav                           {display: none;}
+  .grid-container               {display: block;}
+  .text h1, .text h3            {margin: 0;}
+  .project, .about, .tools h2,
+   .contact, footer             {margin: 4%;}
+  h4.section-title              {top: 80%;}
+  #arrow                        {width: 3%; transform: translate(50%, 50%);}
+  .dots2                        {display: none;}
+  .dots1                        {height: 100%;}
+  
+}
+
+@media screen and (max-width: 729px) {
+  img#frame                     {width: 70%; transform: translate(-45%, -50%);}
+  #back-border                  {width: 66%;}
+  #arrow                        {top: 55%;}
+  footer                        {margin-top: 0;}
+}
+
+
+@media screen and (max-width: 654px) {
+  .grid                         {display: block;}
+  h2                            {text-align: center;}
+  .flex-center                  {flex-direction: column;}
+  .description, .picture        {width: 100%;}
+  .contact>div                  {align-items: center;}
+  .badge                        {margin-top: 5%;}
+  h4.section-title              {top: 80%; transform: translate(-39%, 20%); left: 51%;}
+  #arrow                        {width: 4%; transform: translate(47%, 39%);}
+  .skill                        {width: 45%;}
+  .card                         {width: 40%; margin: 0%;}
+  .cards                        {margin-left: 4%; margin-right: 4%; justify-content: center;}
+  .contact-buttons              {justify-content: center;}
+  .button                       {width: 30%;}
+  .credits a, .credits p,
+  .credits div                  {font-size: 0.5em; line-height: 0;}
+  footer                        {text-align: center; padding-bottom: 1%;}
+}
+
+
+@media screen and (max-width: 539px) {
+  h1                            {font-size: 3.8em;}
+  .text h3                      {font-size: 1.7em;}
+  img#frame                     {width: 80%; transform: translate(-47%, -51%);}
+  #back-border                  {width: 75%; transform: translate(-41%, -45%);}
+  h4.section-title              {top: 90%;}
+  #arrow                        {transform: translate(37%, 51%);}
+  .copyright                    {font-size: smaller;margin-top:2%; text-align: center;}
+}
+
+@media screen and (max-width: 430px) {
+  header                        {min-height: 110vh;}
+  h4.section-title              {top: 75%; left: 47%;}
+  #arrow                        {width: 5%; transform: translate(14%, 31%);}
+  .grid                         {grid-template-rows: auto;}
+}
+
+
+/* FONTS */
+
+.amatic-sc-regular              {font-family: "Amatic SC", sans-serif; font-weight: 400; font-style: normal;}
+.amatic-sc-bold                 {font-family: "Amatic SC", sans-serif; font-weight: 700; font-style: normal;}
+
+.rubik-scribble-regular         {font-family: "Rubik Scribble", system-ui; font-weight: 400; font-style: normal;}
+
+.comic-neue-light               {font-family: "Comic Neue", cursive; font-weight: 300; font-style: normal;}
+.comic-neue-regular             {font-family: "Comic Neue", cursive; font-weight: 400; font-style: normal;}
+.comic-neue-bold                {font-family: "Comic Neue", cursive; font-weight: 700; font-style: normal;}
+.comic-neue-light-italic        {font-family: "Comic Neue", cursive;font-weight: 300;font-style: italic;}
+.comic-neue-regular-italic      {font-family: "Comic Neue", cursive; font-weight: 400; font-style: italic;}
+.comic-neue-bold-italic         {font-family: "Comic Neue", cursive; font-weight: 700; font-style: italic;}
