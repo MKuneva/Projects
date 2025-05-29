@@ -1,0 +1,4 @@
+Lat,Long,CostsToCapture,EnergyRequirements,Production,Machine_costs,Start_up_time,Up_time,Duty_cycle
+51.420644,5.435212,350 euro/ton,10000 kWh/ton,30 ton/year,20000 euro,5 minutes,95%,50%
+51.0,11.5,900 euro/ton,12000 kWh/ton,20 ton/year,40000 euro,1 hour,95%,80%
+48.5,9.2,1100 euro/ton,8000 kWh/ton,10 ton/year,60000 euro,2 hours,95%,100%
