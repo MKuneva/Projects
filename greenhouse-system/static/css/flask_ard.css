@@ -1,0 +1,26 @@
+body{
+    font-family: 'Fantasy', Papyrus;
+    background-color: rgb(200, 235, 247);
+    display:block;
+    padding-top: 50px;
+
+}
+h1{
+    font-size: 50px;
+}
+table{
+
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+.row1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.rows{
+    font-size: 25px;
+}
+

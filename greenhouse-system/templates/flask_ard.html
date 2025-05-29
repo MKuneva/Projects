@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta http-equiv="refresh" content="5">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/flask_ard.css')}}">
+  </head>
+        <title>
+            
+        </title>
+    </head>
+    <body>
+        <h1 align="center">Greenhouse sensor system</h1>
+        <table >
+            <tr class="row1">   
+               <td width="11%">Timestamp</td> 
+               <td width = "18%">Temperature</td>
+               <td width = "18%">Humidity</td>
+               <td width = "18%">Light level</td>
+            </tr> 
+            <tr class="rows"  height="130px" style="vertical-align: middle;">
+                <td>{{current_time}}</td>
+                <td>{{temp}}°C</td>
+                <td>{{hum}}%</td>
+                <td>{{level1}} W/m<sup>2</sup></td>
+            </tr>        
+            <tr>
+                <td class="row1">Average</td>
+                <td class="rows">{{avgT}}°C</td>
+                <td class="rows">{{avgH}}%</td>
+                <td class="rows">{{avgL}} W/m<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td class="row1">Maximum</td>
+                <td class="rows">{{maxT}}°C</td>
+                <td class="rows">{{maxH}}%</td>
+                <td class="rows">{{maxL}} W/m<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td class="row1">Minimum</td>
+                <td class="rows">{{minT}}°C</td>
+                <td class="rows">{{minH}}%</td>
+                <td class="rows">{{minL}} W/m<sup>2</sup></td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

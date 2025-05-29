@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<header>
+			<nav>
+				<a href="#"><h3>Projects</h3></a>
+				<img src="img/logo.png">
+				<a href="#"><h3>Contact</h3></a>
+			</nav>
+		</header>
+	<main>
+		<br><br><br><br><br>
+	
+		<img class="vector top"src="img/Vector1.png">
+		<section class="intro">
+			<span><</span>
+			<img src="img/erg.png">
+			<div class="desc">
+				<h1>Ergotaksio</h1>
+				<h3>Ephemeral presences of dwelling</h3>
+				<p>In what ways does the space, as another agent, interact with the members of the school community in everyday life? How these interweavings shape and affect learning and transmission processes, as well as the ecology of social relations?</p>
+			</div>
+		</section>
+		<br><br><br><br>
+		<img class="vector mid"src="img/Vector2.png">
+		<section class="about">
+			<h2>About</h2>
+			<p>Ιnside school environment, an unusual dwelling emerges by incorporating ephemeral spatial formulations; a minimum, playfully reversible spatial structure, from light and recyclable materials built by children and teachers where it means to be a common ground of multiple gatherings, in order to reveal the active and dialogical aspect of architecture. An in-between space of interaction that can work as a social “condenser” where children are encouraged to develop their desires, skills and knowledge and interact with others by inventing ways of being together as a community as well as promoting formal and informal ways of learning and exchanging.</p>
+		</section>
+		<br><br><br><br>
+		<img class="vector bottom"src="img/Vector3.png">
+		<section class="gallery">
+			<h2>Gallery</h2>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <div class="image one" ></div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <div class="image two" ></div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <div class="image three" ></div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+			</div>
+				
+					
+				</section>
+			</main>
+			<script type="text/javascript">
+				let slideIndex = 1;
+				showSlides(slideIndex);
+
+				// Next/previous controls
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				// Thumbnail image controls
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+				    slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				    dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				}
+
+			</script>
+</body>
+</html>
